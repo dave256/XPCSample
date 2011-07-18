@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		038CE13A13D47B6A0098A600 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038CE13913D47B6A0098A600 /* Cocoa.framework */; };
+		038CE14413D47B6A0098A600 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 038CE14213D47B6A0098A600 /* InfoPlist.strings */; };
+		038CE14613D47B6A0098A600 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 038CE14513D47B6A0098A600 /* main.m */; };
+		038CE14A13D47B6A0098A600 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 038CE14813D47B6A0098A600 /* Credits.rtf */; };
+		038CE14D13D47B6A0098A600 /* XPCSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 038CE14C13D47B6A0098A600 /* XPCSampleAppDelegate.m */; };
+		038CE15013D47B6B0098A600 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 038CE14E13D47B6B0098A600 /* MainMenu.xib */; };
+		038CE16313D480790098A600 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 038CE16113D480790098A600 /* InfoPlist.strings */; };
+		038CE16B13D48A660098A600 /* com.dave256apps.SendMail.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = 038CE15D13D480790098A600 /* com.dave256apps.SendMail.xpc */; };
+		038CE16F13D4A8D30098A600 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038CE16E13D4A8D30098A600 /* Foundation.framework */; };
+		038CE17213D4BC810098A600 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 038CE17113D4BC810098A600 /* main.m */; };
+		038CE17513D4BEB00098A600 /* NSString+Escape.m in Sources */ = {isa = PBXBuildFile; fileRef = 038CE17413D4BEB00098A600 /* NSString+Escape.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		038CE16A13D48A380098A600 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/XPCServices;
+			dstSubfolderSpec = 1;
+			files = (
+				038CE16B13D48A660098A600 /* com.dave256apps.SendMail.xpc in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		038CE13513D47B6A0098A600 /* XPCSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XPCSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		038CE13913D47B6A0098A600 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		038CE13C13D47B6A0098A600 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		038CE13D13D47B6A0098A600 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		038CE13E13D47B6A0098A600 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		038CE14113D47B6A0098A600 /* XPCSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XPCSample-Info.plist"; sourceTree = "<group>"; };
+		038CE14313D47B6A0098A600 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		038CE14513D47B6A0098A600 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		038CE14713D47B6A0098A600 /* XPCSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XPCSample-Prefix.pch"; sourceTree = "<group>"; };
+		038CE14913D47B6A0098A600 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		038CE14B13D47B6A0098A600 /* XPCSampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPCSampleAppDelegate.h; sourceTree = "<group>"; };
+		038CE14C13D47B6A0098A600 /* XPCSampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPCSampleAppDelegate.m; sourceTree = "<group>"; };
+		038CE14F13D47B6B0098A600 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		038CE15D13D480790098A600 /* com.dave256apps.SendMail.xpc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.dave256apps.SendMail.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		038CE16013D480790098A600 /* SendMail-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SendMail-Info.plist"; sourceTree = "<group>"; };
+		038CE16213D480790098A600 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		038CE16413D480790098A600 /* SendMail-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SendMail-Prefix.pch"; sourceTree = "<group>"; };
+		038CE16C13D4A50B0098A600 /* XPCSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = XPCSample.entitlements; sourceTree = "<group>"; };
+		038CE16E13D4A8D30098A600 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		038CE17113D4BC810098A600 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		038CE17313D4BEB00098A600 /* NSString+Escape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Escape.h"; sourceTree = "<group>"; };
+		038CE17413D4BEB00098A600 /* NSString+Escape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Escape.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		038CE13213D47B6A0098A600 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038CE13A13D47B6A0098A600 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		038CE15A13D480790098A600 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038CE16F13D4A8D30098A600 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		038CE12A13D47B6A0098A600 = {
+			isa = PBXGroup;
+			children = (
+				038CE16E13D4A8D30098A600 /* Foundation.framework */,
+				038CE13F13D47B6A0098A600 /* XPCSample */,
+				038CE15E13D480790098A600 /* SendMail */,
+				038CE13813D47B6A0098A600 /* Frameworks */,
+				038CE13613D47B6A0098A600 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		038CE13613D47B6A0098A600 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				038CE13513D47B6A0098A600 /* XPCSample.app */,
+				038CE15D13D480790098A600 /* com.dave256apps.SendMail.xpc */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		038CE13813D47B6A0098A600 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				038CE13913D47B6A0098A600 /* Cocoa.framework */,
+				038CE13B13D47B6A0098A600 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		038CE13B13D47B6A0098A600 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				038CE13C13D47B6A0098A600 /* AppKit.framework */,
+				038CE13D13D47B6A0098A600 /* CoreData.framework */,
+				038CE13E13D47B6A0098A600 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		038CE13F13D47B6A0098A600 /* XPCSample */ = {
+			isa = PBXGroup;
+			children = (
+				038CE16C13D4A50B0098A600 /* XPCSample.entitlements */,
+				038CE14B13D47B6A0098A600 /* XPCSampleAppDelegate.h */,
+				038CE14C13D47B6A0098A600 /* XPCSampleAppDelegate.m */,
+				038CE14E13D47B6B0098A600 /* MainMenu.xib */,
+				038CE14013D47B6A0098A600 /* Supporting Files */,
+			);
+			path = XPCSample;
+			sourceTree = "<group>";
+		};
+		038CE14013D47B6A0098A600 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				038CE14113D47B6A0098A600 /* XPCSample-Info.plist */,
+				038CE14213D47B6A0098A600 /* InfoPlist.strings */,
+				038CE14513D47B6A0098A600 /* main.m */,
+				038CE14713D47B6A0098A600 /* XPCSample-Prefix.pch */,
+				038CE14813D47B6A0098A600 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		038CE15E13D480790098A600 /* SendMail */ = {
+			isa = PBXGroup;
+			children = (
+				038CE17313D4BEB00098A600 /* NSString+Escape.h */,
+				038CE17413D4BEB00098A600 /* NSString+Escape.m */,
+				038CE17113D4BC810098A600 /* main.m */,
+				038CE15F13D480790098A600 /* Supporting Files */,
+			);
+			path = SendMail;
+			sourceTree = "<group>";
+		};
+		038CE15F13D480790098A600 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				038CE16013D480790098A600 /* SendMail-Info.plist */,
+				038CE16113D480790098A600 /* InfoPlist.strings */,
+				038CE16413D480790098A600 /* SendMail-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		038CE13413D47B6A0098A600 /* XPCSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 038CE15313D47B6B0098A600 /* Build configuration list for PBXNativeTarget "XPCSample" */;
+			buildPhases = (
+				038CE13113D47B6A0098A600 /* Sources */,
+				038CE13213D47B6A0098A600 /* Frameworks */,
+				038CE13313D47B6A0098A600 /* Resources */,
+				038CE16A13D48A380098A600 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XPCSample;
+			productName = XPCSample;
+			productReference = 038CE13513D47B6A0098A600 /* XPCSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		038CE15C13D480790098A600 /* SendMail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 038CE16713D480790098A600 /* Build configuration list for PBXNativeTarget "SendMail" */;
+			buildPhases = (
+				038CE15913D480790098A600 /* Sources */,
+				038CE15A13D480790098A600 /* Frameworks */,
+				038CE15B13D480790098A600 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SendMail;
+			productName = SendMail;
+			productReference = 038CE15D13D480790098A600 /* com.dave256apps.SendMail.xpc */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		038CE12C13D47B6A0098A600 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = dave256apps.com;
+			};
+			buildConfigurationList = 038CE12F13D47B6A0098A600 /* Build configuration list for PBXProject "XPCSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 038CE12A13D47B6A0098A600;
+			productRefGroup = 038CE13613D47B6A0098A600 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				038CE13413D47B6A0098A600 /* XPCSample */,
+				038CE15C13D480790098A600 /* SendMail */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		038CE13313D47B6A0098A600 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038CE14413D47B6A0098A600 /* InfoPlist.strings in Resources */,
+				038CE14A13D47B6A0098A600 /* Credits.rtf in Resources */,
+				038CE15013D47B6B0098A600 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		038CE15B13D480790098A600 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038CE16313D480790098A600 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		038CE13113D47B6A0098A600 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038CE14613D47B6A0098A600 /* main.m in Sources */,
+				038CE14D13D47B6A0098A600 /* XPCSampleAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		038CE15913D480790098A600 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038CE17213D4BC810098A600 /* main.m in Sources */,
+				038CE17513D4BEB00098A600 /* NSString+Escape.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		038CE14213D47B6A0098A600 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				038CE14313D47B6A0098A600 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		038CE14813D47B6A0098A600 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				038CE14913D47B6A0098A600 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		038CE14E13D47B6B0098A600 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				038CE14F13D47B6B0098A600 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		038CE16113D480790098A600 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				038CE16213D480790098A600 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		038CE15113D47B6B0098A600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		038CE15213D47B6B0098A600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		038CE15413D47B6B0098A600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = XPCSample/XPCSample.entitlements;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XPCSample/XPCSample-Prefix.pch";
+				INFOPLIST_FILE = "XPCSample/XPCSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		038CE15513D47B6B0098A600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = XPCSample/XPCSample.entitlements;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XPCSample/XPCSample-Prefix.pch";
+				INFOPLIST_FILE = "XPCSample/XPCSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		038CE16813D480790098A600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SendMail/SendMail-Prefix.pch";
+				INFOPLIST_FILE = "SendMail/SendMail-Info.plist";
+				MACH_O_TYPE = mh_execute;
+				PRODUCT_NAME = "com.dave256apps.$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xpc;
+			};
+			name = Debug;
+		};
+		038CE16913D480790098A600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SendMail/SendMail-Prefix.pch";
+				INFOPLIST_FILE = "SendMail/SendMail-Info.plist";
+				MACH_O_TYPE = mh_execute;
+				PRODUCT_NAME = "com.dave256apps.$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xpc;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		038CE12F13D47B6A0098A600 /* Build configuration list for PBXProject "XPCSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				038CE15113D47B6B0098A600 /* Debug */,
+				038CE15213D47B6B0098A600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		038CE15313D47B6B0098A600 /* Build configuration list for PBXNativeTarget "XPCSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				038CE15413D47B6B0098A600 /* Debug */,
+				038CE15513D47B6B0098A600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		038CE16713D480790098A600 /* Build configuration list for PBXNativeTarget "SendMail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				038CE16813D480790098A600 /* Debug */,
+				038CE16913D480790098A600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 038CE12C13D47B6A0098A600 /* Project object */;
+}
