@@ -44,26 +44,31 @@
 
 - (void)addressEmailToAddresses:(NSArray*)emailAddresses withSender:(NSString*)sender andSubject:(NSString*)subject andBody:(NSString*)body send:(BOOL)sendAutomatically
 {
-    xpc_connection_t conn = xpc_connection_create("com.dave256apps.SendMail", NULL);
-    xpc_connection_set_event_handler(conn, ^(xpc_object_t object) {
-        //[self mailCallback:object];
+    if (xpc_connection_create != NULL) {
+        xpc_connection_t conn = xpc_connection_create("com.dave256apps.SendMail", NULL);
+        xpc_connection_set_event_handler(conn, ^(xpc_object_t object) {
+            //[self mailCallback:object];
+            
+        });
+        xpc_connection_resume(conn);
         
-    });
-    xpc_connection_resume(conn);
-    
-    NSString *recipients = [emailAddresses componentsJoinedByString:@" "];
-    xpc_object_t message = xpc_dictionary_create(NULL, NULL, 0);
-    xpc_dictionary_set_string(message, "sendingAddress", [sender cStringUsingEncoding:NSUTF8StringEncoding]);
-    xpc_dictionary_set_string(message, "recipients", [recipients cStringUsingEncoding:NSUTF8StringEncoding]);
-    xpc_dictionary_set_string(message, "subject", [subject cStringUsingEncoding:NSUTF8StringEncoding]);
-    xpc_dictionary_set_string(message, "body", [body cStringUsingEncoding:NSUTF8StringEncoding]);
-    xpc_dictionary_set_bool(message, "send", sendAutomatically);
-
-    xpc_connection_send_message_with_reply(conn, message, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT ,0),
-                                           ^(xpc_object_t reply) {
-                                               [self mailCallback:reply];
-                                           });
-    xpc_release(message);
+        NSString *recipients = [emailAddresses componentsJoinedByString:@" "];
+        xpc_object_t message = xpc_dictionary_create(NULL, NULL, 0);
+        xpc_dictionary_set_string(message, "sendingAddress", [sender cStringUsingEncoding:NSUTF8StringEncoding]);
+        xpc_dictionary_set_string(message, "recipients", [recipients cStringUsingEncoding:NSUTF8StringEncoding]);
+        xpc_dictionary_set_string(message, "subject", [subject cStringUsingEncoding:NSUTF8StringEncoding]);
+        xpc_dictionary_set_string(message, "body", [body cStringUsingEncoding:NSUTF8StringEncoding]);
+        xpc_dictionary_set_bool(message, "send", sendAutomatically);
+        
+        xpc_connection_send_message_with_reply(conn, message, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT ,0),
+                                               ^(xpc_object_t reply) {
+                                                   [self mailCallback:reply];
+                                               });
+        xpc_release(message);
+    }
+    else {
+        NSLog(@"no XPC");
+    }
 }
 
 - (IBAction)buttonPressed:(id)sender
